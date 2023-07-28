@@ -28,6 +28,7 @@ body{
 }
 
 header{
+    padding: 8px;
     height: 430px;
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor4));
     text-align: center;
