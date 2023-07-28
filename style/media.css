@@ -9,11 +9,11 @@
         margin: auto;
     }
     #mapa select{
-        width: 100%;
+        width: 90%;
         margin-bottom: 5px;
     }
     #mapa input{
-        width: 49.4%;
+        width: 44.5%;
         position: relative;
     }
 }

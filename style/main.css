@@ -121,8 +121,13 @@ main a:hover{
     text-decoration: underline;
 }
 
+/* mapa */
+
 #mapa{
     border-bottom: 1px solid black;
+    padding-top: 20px;
+    padding: 20px 0;
+    height: 1000px;
 }
 
 #mapa form{
@@ -161,19 +166,21 @@ main a:hover{
     font-family: var(--font-main);
     font-size: 1.1em;
     margin: auto;
-    margin-top: 20px;
+    margin: 20px 20px 0 20px;
     text-align: center;
     background-image: linear-gradient(to right, var(--cor-w), transparent);
 }
+
+/*(código criado no inicio do aprendizado)*/
 
 #box-content {
     position: relative;
     margin: auto;
     margin-bottom: 50px;
     margin-top: 75px;
-    height: 500px;
-    width: 750px;
-    clip-path: polygon(421px 0, 100% 307px, 100% 100%, 0 100%, 0 0);
+    height: 50%;
+    width: 75%;
+    clip-path: polygon(54.2% 0, 100% 61.4%, 100% 100%, 0 100%, 0 0);
     background: #c0c0c0;
 }
 
@@ -181,34 +188,34 @@ main a:hover{
 .prd-g,
 .prd-o,
 .prd-y {
-  background: #ddd;
-  position: absolute;
-  transition: all 0.3s ease;
+    background: #ddd;
+    position: absolute;
+    transition: all 0.3s ease;
 }
 
 .prd-b,
 .prd-o,
 .prd-y {
-  box-shadow: 2px 2px 3px rgba(58, 58, 58, 0.116);
+    box-shadow: 2px 2px 3px rgba(58, 58, 58, 0.116);
 }
 
 .prd-g:hover {
-  background: gray;
+    background: gray;
 }
 
 .prd-b:hover {
-  background: darkblue;
-  box-shadow: 2px 2px 2px rgb(5, 5, 165);
+    background: darkblue;
+    box-shadow: 2px 2px 2px rgb(5, 5, 165);
 }
 
 .prd-o:hover {
-  background: orange;
-  box-shadow: 2px 2px 2px #ffa500;
+    background: orange;
+    box-shadow: 2px 2px 2px #ffa500;
 }
 
 .prd-y:hover {
-  background: yellow;
-  box-shadow: 2px 2px 2px rgb(252, 252, 10);
+    background: yellow;
+    box-shadow: 2px 2px 2px rgb(252, 252, 10);
 }
 
 #rota-1,
@@ -216,11 +223,13 @@ main a:hover{
 #rota-3,
 #rota-4,
 #rota-5 {
-  height: 1px;
-  position: absolute;
-  z-index: 9999;
-  border-bottom: black dotted 4px;
+    height: 1px;
+    position: absolute;
+    z-index: 9999;
+    border-bottom: black dotted 4px;
 }
+
+/* fim do mapa */
 
 #sobre{
     border-bottom: 1px solid black;
