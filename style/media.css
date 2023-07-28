@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 @media (max-width:769px){
+    body{
+        background-color: rgba(0, 0, 0, 0.37);
+    }
     #mapa form{
         max-width: 500px;
         margin: auto;
