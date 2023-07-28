@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Itim&display=swap');
+
+:root{
+    --cor-w: #ff2d2d;
+    --cor0: #FF0000;
+    --cor1: #DB0000;
+    --cor2: #B40000;
+    --cor3: #8B0000;
+    --cor4: #590000;
+
+    --font-main: Arial, Helvetica, Verdana, sans-serif;
+    --font-em: 'Itim', cursive;
+    --font-title: 'Bebas Neue', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+
+body{
+    background-color: rgba(255, 0, 0, 0.37);
+    background-attachment: fixed;
+}
+
+header{
+    height: 430px;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor4));
+    text-align: center;
+    margin-top: -100px;
+    padding-top: 100px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+header h1{
+    color: white;
+    font-family: var(--font-em);
+    font-size: 4.5em;
+    text-shadow: 2px 2px 4px #5900007a;
+}
+
+header p{
+    color: white;
+    max-width: 520px;
+    margin: auto;
+    margin-top: 10px;
+    font-family: var(--font-main);
+    font-size: 1.2em;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    height: 100px;
+    z-index: 1;
+}
+
+nav a{
+    font-family: var(--font-title);
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+    margin-left: 10px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.288);
+}
+
+nav a:nth-child(n + 6){
+    text-align: center;
+    float: right;
+    margin: 0px 10px 0px 0px ;
+}
+
+nav a:hover{
+    color: var(--cor0);
+    background-color: var(--cor3);
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-shadow: none;
+}
+
+main{
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 0 0 10px 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+main h1{
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.377);
+    font-family: var(--font-title);
+    font-size: 3em;
+    color: var(--cor2);
+    margin-top: 25px;
+}
+
+main section{
+    padding: 20px;
+}
+
+main a{
+    font-weight: 600;
+    padding: 5px;
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+#mapa{
+    height: 100vh;
+    border-bottom: 1px solid black;
+}
+
+#mapa form{
+    margin-top: 25px;
+    text-align: center;
+}
+
+#mapa select{
+    width: 250px;
+    height: 33px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#mapa input{
+    background-color: #dbdbdb81;
+    color: var(--cor4);
+    width: 100px;
+    height: 33px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: var(--font-main);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#mapa input:hover{
+    background-color: var(--cor-w);
+    color: white;
+}
+
+#resultado {
+    color: var(--cor4);
+    padding: 8px;
+    font-family: var(--font-main);
+    font-size: 1.1em;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor-w), transparent);
+}
+
+#box-content {
+    position: relative;
+    margin: auto;
+    margin-top: 75px;
+    height: 500px;
+    width: 750px;
+    clip-path: polygon(421px 0, 100% 307px, 100% 100%, 0 100%, 0 0);
+    background: #c0c0c0;
+}
+
+.prd-b,
+.prd-g,
+.prd-o,
+.prd-y {
+  background: #ddd;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.prd-b,
+.prd-o,
+.prd-y {
+  box-shadow: 2px 2px 3px rgba(58, 58, 58, 0.116);
+}
+
+.prd-g:hover {
+  background: gray;
+}
+
+.prd-b:hover {
+  background: darkblue;
+  box-shadow: 2px 2px 2px rgb(5, 5, 165);
+}
+
+.prd-o:hover {
+  background: orange;
+  box-shadow: 2px 2px 2px #ffa500;
+}
+
+.prd-y:hover {
+  background: yellow;
+  box-shadow: 2px 2px 2px rgb(252, 252, 10);
+}
+
+#rota-1,
+#rota-2,
+#rota-3,
+#rota-4,
+#rota-5 {
+  height: 1px;
+  position: absolute;
+  z-index: 9999;
+  border-bottom: black dotted 4px;
+}
+
+#sobre{
+    border-bottom: 1px solid black;
+}
+
+#sobre h2{
+    text-indent: 1.2em;
+    color: var(--cor4);
+    margin-top: 25px;
+    padding: 5px;
+    font-family: var(--font-main);
+    background-image: linear-gradient(to right, var(--cor-w), transparent);
+}
+
+#sobre p{
+    line-height: 1.4em;
+    color: black;
+    margin: auto;
+    max-width: 700px;
+    text-indent: 1em;
+    text-align: justify;
+    font-family: var(--font-main);
+    font-size: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#cursos{
+    height: 100vh;
+    border-bottom: 1px solid black;
+}
+
+#contato{
+    height: 100vh;
+}
+
+footer p{
+    font-family: var(--font-main);
+    text-align: center;
+    color: white;
+    background-color: var(--cor4);
+    padding: 8px;
+    font-size: 1em;
+}
+
+footer a{
+    color: white;
+    font-family: var(--font-main);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--cor-w);
+    text-decoration: underline;
+}

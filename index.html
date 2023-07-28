@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cotil Maps</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/main.css" type="text/css">
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#contato">Contato</a>
+
+        
+        <a href="https://www.linkedin.com/in/wendel-frota-11649b279/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/wendelfrota" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/wendel_frota_/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </nav>
+    <header>
+        <h1>
+            <img src="img/cotil_inteiroreal.png" alt="" style="display: inline; width: .8em; top: 22px; position: relative; left: 10px;">
+            otil Maps
+        </h1>
+        <p>Desenvolvido por alunos, para alunos. <br> Auxiliando na localização no COPA (Cotil de Portas Abertas), na Fecitec (Feira de Ciências e Tecnologia) e da nova calourada.</p>
+    </header>
+    <main>
+
+        <section id="mapa">
+            <h1>Cotil Maps</h1>
+
+            <form id="form">
+                <select name="saida">
+                    <option disabled selected>Saida...</option>
+                    <option value="academico">Acadêmico</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="biblioteca">Biblioteca</option>
+                    <option value="cantina">Cantina</option>
+                    <option value="entrada-p">Entrada Principal</option>
+                    <option value="quadras">Quadras Poliesportivas</option>
+                    <option value="restaurante universitario">Restaurante Universitário</option>
+                  </select>
+            
+                  <select name="chegada">
+                    <option disabled selected>Destino...</option>
+                    <option value="academico">Acadêmico</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="biblioteca">Biblioteca</option>
+                    <option value="cantina">Cantina</option>
+                    <option value="entrada-p">Entrada Principal</option>
+                    <option value="quadras">Quadras Poliesportivas</option>
+                    <option value="restaurante universitario">Restaurante Universitário</option>
+                  </select>
+            
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Cancelar">
+            </form>
+
+            <div id="resultado">Escolha as opções de saída e de chegada.</div>
+
+            <div id="box-content">
+
+                <div id="rota-img"></div>
+                <div id="rota-1"></div>
+                <div id="rota-2"></div>
+                <div id="rota-3"></div>
+                <div id="rota-4"></div>
+                <div id="rota-5"></div>
+            
+                <div>
+                    <div class="prd-o" onclick="ativarDiv('div1')" style="width: 80px; height: 40px; top: 26px; left: 20px;"></div>
+                    <div class="prd-o" onclick="ativarDiv('div1')" style="width: 80px; height: 40px; left: 20px; top: 68px;"></div>
+                    <div class="prd-b" style="width: 40px; height: 300px; top: 118px; left: 15px;"></div>
+                    <div class="prd-b" style="width: 40px; height: 40px; bottom: 206px; left: 55px;"></div>
+                    <div class="prd-o" onclick="ativarDiv('div1')" style="width: 162px; height: 81px; left: 102px; top: 27px;"></div>
+                    <div class="prd-b" style="width: 40px; height: 160px; left: 95px; top: 210px;"></div>
+                    <div class="prd-o" style="width: 40px; height: 75px; left: 95px; top: 118px;"></div>
+                    <div class="prd-o" onclick="ativarDiv('div1')" style="width: 162px; height: 20px; left: 102px; top: 5px;"></div>
+                    <div class="prd-o" onclick="ativarDiv('div4')" style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); width: 30px; height: 30px; left: 249px; top: 196px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div5')" style="width: 100px; height: 50px; left: 304px; top: 25px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div5')" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%, 25% 60%, 0% 60%); width: 63px; height: 126px; left: 326px; top: 103px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div5')" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 60% 50%, 40% 50%, 40% 100%, 75% 100%, 75% 50%, 60% 50%, 60% 0, 40% 0, 40% 50%, 25% 50%, 25% 100%, 0 100%); width: 112px; height: 91px; left: 298px; top: 263px;"></div>
+                    <div class="prd-o" onclick="ativarDiv('div6')" style="width: 20px;height: 22px;left: 344px;top: 263px;"></div>
+                    <div class="prd-b" style="width: 20px;height: 22px;left: 344px;top: 285px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div5')" style="width: 70px; height: 40px; left: 405px; top: 68px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div5')" style="clip-path: polygon(0 0, 25% 0, 25% 50%, 100% 50%, 100% 100%, 0 100%); width: 70px; height: 35px; left: 405px; top: 112px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div5')" style="clip-path: polygon(0 15%, 25% 15%, 25% 70%, 100% 70%, 100% 100%, 0 100%); width: 80px; height: 40px; left: 400px; top: 145px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div5')" style="width: 100px; height: 50px; left: 400px; top: 190px;"></div>
+                    <div class="prd-o" onclick="ativarDiv('div8')" style="width: 80px; height: 120px; left: 420px; top: 263px;"></div>
+                    <div class="prd-y" onclick="ativarDiv('div9')" style="width: 70px; height: 20px; right: 280px; bottom: 0px; box-shadow: 2px 2px 3px rgba(58, 58, 58, 0.116)"></div>
+                    <div class="prd-o" onclick="ativarDiv('div10')" style="width: 60px; height: 40px; left: 525px; top: 256px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div5')" style="width: 60px; height: 40px; left: 525px; top: 308px;"></div>
+                    <div class="prd-b" onclick="ativarDiv('div11')" style="width: 60px; height: 40px; left: 525px; top: 360px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div12')" style="width: 60px; height: 46px; left: 590px; top: 253px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div12')" style="width: 60px; height: 46px; left: 590px; top: 305px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div12')" style="width: 72px; height: 46px; left: 585px; top: 357px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div12')" style="width: 30px; height: 23px; left: 615px; top: 226px;"></div>
+                    <div class="prd-g" onclick="ativarDiv('div12')" style="width: 23px; height: 30px; left: 660px; top: 313px;"></div>
+                    <div class="prd-y" onclick="ativarDiv('div9')" style="transform: rotate(43deg); width: 30px; height: 23px; left: 505px; top: 100px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h1>Sobre</h1>
+            
+            <h2>O que é o COTIL Maps?</h2>
+            <p>
+            O COTIL Maps é um site desenvolvido por alunos, para alunos. O site conta com mapas de toda a área do <a href="https://www.cotil.unicamp.br" target="_blank">COTIL</a>, de modo a auxiliar na localização de alunos novos ou externos que estejam frequentando o colégio em ocasiões como o COPA (COTIL de Portas Abertas), de uma maneira intuitiva e de fácil uso.
+            </p>
+        
+            <h2>Como Surgiu?</h2>
+            <p>
+            O projeto surgiu após uma conversa entre os desenvolvedores, onde percebemos que tínhamos algo em comum: todos, sem exceção, se sentiram deslocados e perdidos após ingressarmos no COTIL, e, com isso em mente, tivemos a ideia deste site, para que outros não se sintam tão perdidos e consigam navegar pelas instalações do colégio sem dificuldades.
+            </p>
+        </section>
+
+        <section id="cursos">
+            <h1>Cursos</h1>
+        </section>
+
+        <section id="contato">
+            <h1>Contato</h1>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Site criado por <a href="https://github.com/wendelfrota" target="_blank">Wendel Frota</a> para os eventos da Fecitec e COPA</p>
+    </footer>
+
+    <script src="./script/main.js"></script>
+</body>
+</html>
