@@ -190,6 +190,7 @@ main a:hover {
     width: 75%;
     clip-path: polygon(54.2% 0, 100% 61.4%, 100% 100%, 0 100%, 0 0);
     background: #c0c0c0;
+    border-radius: 8px;
 }
 
 .prd-b,
@@ -260,34 +261,7 @@ main a:hover {
     margin-top: 30px;
     margin-bottom: 50px;
 }
-
-#pol-logo1{
-    margin-top: 25px;
-    height: 500px;
-    background-color: #ddd;
-    clip-path: circle();
-    margin-bottom: 50px;
-    align-items: center;
-    display: flex;
-}
-
-#pol-logo2{
-    height: 300px;
-    width: 300px;
-    background-color: white;
-    clip-path: circle();
-    margin: auto;
-}
-
-.pol{
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
+/*cursos*/
 #contato {
     text-align: center;
 }

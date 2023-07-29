@@ -18,7 +18,7 @@ document.getElementById("form").addEventListener("reset", function () {
   document.getElementById("rota-4").style.cssText = ""
   document.getElementById("rota-5").style.cssText = ""
   document.getElementById("imagem-id").remove();
-  document.getElementById("resultado").innerText = "Escolha as opções de saída e de chegada."
+  document.getElementById("resultado").innerText = "Escolha uma rota ou apenas uma opção para obter informações sobre o local."
 })
 
 
@@ -454,6 +454,55 @@ document.getElementById("form").addEventListener("submit", function (event) {
     document.getElementById("rota-3").style.cssText = "width: 3.2%; top: 45.2%; left: 35.2%;"
     document.getElementById("rota-4").style.cssText = "width: 0.26%; top: 77%; left: 61.33%; height: 18.8%; border-left: 4px dotted black;"
     document.getElementById("resultado").innerText = "."
+    rotaImg.style.cssText = "position: absolute; left: 32.8%; top: 39.8%; z-index: 99999;"
+
+
+  } else if (saida === "academico" || chegada === "academico") {
+    removeOn();
+    addImg(imagem);
+    document.getElementById("resultado").innerText = "Prédio Acadêmico"
+    rotaImg.style.cssText = "position: absolute; left: 4.93%; top: 246px; z-index: 99999;"
+
+
+  } else if (saida === "administrativo" || chegada === "administrativo") {
+    removeOn();
+    addImg(imagem);
+    document.getElementById("resultado").innerText = "Prédio Administrativo"
+    rotaImg.style.cssText = "position: absolute; left: 16%; top: 49.2%; z-index: 99999;"
+
+
+  } else if (saida === "biblioteca" || chegada === "biblioteca") {
+    removeOn();
+    addImg(imagem);
+    document.getElementById("resultado").innerText = "Biblioteca"
+    rotaImg.style.cssText = "position: absolute; left: 59.2%; top: 71.6%; z-index: 99999;"
+
+
+  } else if (saida === "entrada-p" || chegada === "entrada-p") {
+    removeOn();
+    addImg(imagem);
+    document.getElementById("resultado").innerText = "Entrada Principal"
+    rotaImg.style.cssText = "position: absolute; left: 59.2%; top: 90.4%; z-index: 99999;"
+
+
+  } else if (saida === "quadras" || chegada === "quadras") {
+    removeOn();
+    addImg(imagem);
+    document.getElementById("resultado").innerText = "Quadras Poliesportivas"
+    rotaImg.style.cssText = "position: absolute; left: 9.2%; top: 16.2%; z-index: 99999;"
+
+
+  } else if (saida === "restaurante universitario" || chegada === "restaurante universitario") {
+    removeOn();
+    addImg(imagem);
+    document.getElementById("resultado").innerText = "Restaurante Universitario (RU)"
+    rotaImg.style.cssText = "position: absolute; left: 16%; top: 24.4%; z-index: 99999;"
+
+
+  } else if (saida === "cantina" || chegada === "cantina") {
+    removeOn();
+    addImg(imagem);
+    document.getElementById("resultado").innerText = "Cantina"
     rotaImg.style.cssText = "position: absolute; left: 32.8%; top: 39.8%; z-index: 99999;"
   }
 }); 

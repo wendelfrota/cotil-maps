@@ -22,4 +22,11 @@
     #imagem-id{
         width: 70%;
     }
+    #mapa #cancel:active {/*testar o hover com active no cell*/
+        background-color: var(--cor-w);
+        color: white;
+    }
+    .card{
+        width: 350px;
+    }
 }
