@@ -16,4 +16,10 @@
         width: 44.5%;
         position: relative;
     }
+    #box-content{
+        height: 350px;
+    }
+    #imagem-id{
+        width: 70%;
+    }
 }
