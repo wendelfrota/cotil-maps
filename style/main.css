@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Itim&display=swap');
 
-:root{
+:root {
     --cor-w: #ff2d2d;
     --cor0: #FF0000;
     --cor1: #DB0000;
@@ -15,19 +15,19 @@
     --font-title: 'Bebas Neue', sans-serif;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font-main);
 }
 
-body{
+body {
     background-color: rgba(255, 0, 0, 0.37);
     background-attachment: fixed;
 }
 
-header{
+header {
     padding: 8px;
     height: 430px;
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor4));
@@ -37,14 +37,14 @@ header{
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
 }
 
-header h1{
+header h1 {
     color: white;
     font-family: var(--font-em);
     font-size: 4.5em;
     text-shadow: 2px 2px 4px #5900007a;
 }
 
-header p{
+header p {
     color: white;
     max-width: 520px;
     margin: auto;
@@ -53,7 +53,7 @@ header p{
     font-size: 1.2em;
 }
 
-nav{
+nav {
     position: sticky;
     top: 0;
     left: 0;
@@ -62,7 +62,7 @@ nav{
     z-index: 1;
 }
 
-nav a{
+nav a {
     font-family: var(--font-title);
     font-size: 2em;
     text-decoration: none;
@@ -72,13 +72,13 @@ nav a{
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.288);
 }
 
-nav a:nth-child(n + 6){
+nav a:nth-child(n + 6) {
     text-align: center;
     float: right;
-    margin: 0px 10px 0px 0px ;
+    margin: 0px 10px 0px 0px;
 }
 
-nav a:hover{
+nav a:hover {
     color: var(--cor0);
     background-color: var(--cor3);
     border-radius: 5px;
@@ -86,7 +86,7 @@ nav a:hover{
     text-shadow: none;
 }
 
-main{
+main {
     margin: auto;
     margin-bottom: 30px;
     border-radius: 0 0 10px 10px;
@@ -96,7 +96,7 @@ main{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
 }
 
-main h1{
+main h1 {
     font-weight: normal;
     text-align: center;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.377);
@@ -106,56 +106,65 @@ main h1{
     margin-top: 25px;
 }
 
-main section{
+main section {
     padding: 20px;
 }
 
-main a{
+main a {
     font-weight: 600;
     padding: 5px;
     color: var(--cor3);
     text-decoration: none;
 }
 
-main a:hover{
+main a:hover {
     text-decoration: underline;
 }
 
 /* mapa */
 
-#mapa{
+#mapa {
     border-bottom: 1px solid black;
     padding-top: 20px;
     padding: 20px 0;
-    height: 1000px;
 }
 
-#mapa form{
+#mapa form {
     margin-top: 25px;
     text-align: center;
 }
 
-#mapa select{
+#mapa select {
     width: 250px;
     height: 33px;
     border-radius: 5px;
     font-size: 1em;
 }
 
-#mapa input{
-    background-color: #dbdbdb81;
-    color: var(--cor4);
+#mapa input {
+    background-color: var(--cor-w);
+    color: white;
     width: 100px;
     height: 33px;
     padding: 0 15px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: none;
     font-family: var(--font-main);
     font-size: 1em;
     cursor: pointer;
 }
 
-#mapa input:hover{
+#mapa input:hover {
+    background-color: var(--cor2);
+}
+
+#mapa #cancel {
+    background-color: white;
+    border: 1px solid var(--cor-w);
+    color: var(--cor-w);
+}
+
+#mapa #cancel:hover {
     background-color: var(--cor-w);
     color: white;
 }
@@ -178,7 +187,7 @@ main a:hover{
     margin: auto;
     margin-bottom: 50px;
     margin-top: 75px;
-    height: 50%;
+    height: 500px;
     width: 75%;
     clip-path: polygon(54.2% 0, 100% 61.4%, 100% 100%, 0 100%, 0 0);
     background: #c0c0c0;
@@ -231,11 +240,11 @@ main a:hover{
 
 /* fim do mapa */
 
-#sobre{
+#sobre {
     border-bottom: 1px solid black;
 }
 
-#sobre h2{
+#sobre h2 {
     text-indent: 1.2em;
     color: var(--cor4);
     margin-top: 25px;
@@ -244,7 +253,7 @@ main a:hover{
     background-image: linear-gradient(to right, var(--cor-w), transparent);
 }
 
-#sobre p{
+#sobre p {
     line-height: 1.4em;
     color: black;
     margin: auto;
@@ -257,16 +266,16 @@ main a:hover{
     margin-bottom: 50px;
 }
 
-#cursos{
+#cursos {
     height: 100vh;
     border-bottom: 1px solid black;
 }
 
-#contato{
+#contato {
     text-align: center;
 }
 
-.card{
+.card {
     padding: 45px;
     padding-bottom: 15px;
     width: 300px;
@@ -276,12 +285,12 @@ main a:hover{
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.192);
 }
 
-.card img{
+.card img {
     display: block;
     width: 100%;
 }
 
-.card p{
+.card p {
     margin-top: 15px;
     font-family: var(--font-main);
     font-size: 1.1em;
@@ -290,21 +299,21 @@ main a:hover{
     text-align: left;
 }
 
-.card p:nth-child(3){
+.card p:nth-child(3) {
     text-indent: 0;
 }
 
-.card a{
+.card a {
     position: relative;
     font-size: 2em;
     line-height: 1.8em;
 }
 
-.card a:hover{
+.card a:hover {
     text-decoration: none;
 }
 
-footer p{
+footer p {
     font-family: var(--font-main);
     text-align: center;
     color: white;
@@ -313,14 +322,14 @@ footer p{
     font-size: 1em;
 }
 
-footer a{
+footer a {
     color: white;
     font-family: var(--font-main);
     font-weight: bold;
     text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
     color: var(--cor-w);
     text-decoration: underline;
 }
