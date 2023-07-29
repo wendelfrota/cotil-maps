@@ -124,7 +124,6 @@ main a:hover {
 /* mapa */
 
 #mapa {
-    border-bottom: 1px solid black;
     padding-top: 20px;
     padding: 20px 0;
 }
@@ -240,10 +239,6 @@ main a:hover {
 
 /* fim do mapa */
 
-#sobre {
-    border-bottom: 1px solid black;
-}
-
 #sobre h2 {
     text-indent: 1.2em;
     color: var(--cor4);
@@ -266,9 +261,31 @@ main a:hover {
     margin-bottom: 50px;
 }
 
-#cursos {
-    height: 100vh;
-    border-bottom: 1px solid black;
+#pol-logo1{
+    margin-top: 25px;
+    height: 500px;
+    background-color: #ddd;
+    clip-path: circle();
+    margin-bottom: 50px;
+    align-items: center;
+    display: flex;
+}
+
+#pol-logo2{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    clip-path: circle();
+    margin: auto;
+}
+
+.pol{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #contato {
