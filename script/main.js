@@ -18,7 +18,7 @@ document.getElementById("form").addEventListener("reset", function () {
   document.getElementById("rota-4").style.cssText = ""
   document.getElementById("rota-5").style.cssText = ""
   document.getElementById("imagem-id").remove();
-  document.getElementById("resultado").innerText = "Escolha uma rota ou apenas uma opção para obter informações sobre o local."
+  document.getElementById("resultado").innerText = "Escolha o trajeto ou uma opção de chegada para obter informações sobre o local."
 })
 
 
@@ -103,7 +103,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 54.6%; left: 21.86%; height: 23.2%; border-left: black dotted 4px;"
     document.getElementById("rota-3").style.cssText = "width: 40%; top: 77%; left: 21.86%; z-index: 1;"
     document.getElementById("resultado").innerText = "Após sair, vire à direita e siga reto. Suba as escadas e continue reto até se deparar com o estacionamento ou o quiosque. Vire à direita e siga reto até a entrada do Prédio Administrativo. Entre no prédio, siga em frente até a entrada do Prédio Acadêmico e você chegará ao seu destino."
-    rotaImg.style.cssText = "position: absolute; left: 4.93%; top: 246px; z-index: 99999;"
+    rotaImg.style.cssText = "position: absolute; left: 4.93%; top: 49.2%; z-index: 99999;"
 
 
   } else if (saida === "academico" && chegada === "biblioteca") {
@@ -461,7 +461,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     removeOn();
     addImg(imagem);
     document.getElementById("resultado").innerText = "Prédio Acadêmico"
-    rotaImg.style.cssText = "position: absolute; left: 4.93%; top: 246px; z-index: 99999;"
+    rotaImg.style.cssText = "position: absolute; left: 4.93%; top: 49.2%; z-index: 99999;"
 
 
   } else if (saida === "administrativo" || chegada === "administrativo") {

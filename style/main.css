@@ -170,9 +170,10 @@ main a:hover {
 
 #resultado {
     color: var(--cor4);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.349);
     padding: 8px;
     font-family: var(--font-main);
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin: auto;
     margin: 20px 20px 0 20px;
     text-align: center;
