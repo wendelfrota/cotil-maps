@@ -18,7 +18,7 @@ document.getElementById("form").addEventListener("reset", function () {
   document.getElementById("rota-4").style.cssText = ""
   document.getElementById("rota-5").style.cssText = ""
   document.getElementById("imagem-id").remove();
-  document.getElementById("resultado").innerText = "Escolha o trajeto ou uma opção de chegada para obter informações sobre o local."
+  document.getElementById("resultado").innerText = "Escolha um trajeto ou apenas uma opção para obter informações sobre o local."
 })
 
 
@@ -427,6 +427,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
 
   } else if (saida === "biblioteca" && chegada === "cantina") {
+    removeOn();
     addImg(imagem);
     document.getElementById("rota-1").style.cssText = "width: 24%; top: 77%; left: 37.86%; z-index: 1;"
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 45.2%; left: 37.86%; height: 32.6%; border-left: 4px dotted black;"
@@ -474,7 +475,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
   } else if (saida === "biblioteca" || chegada === "biblioteca") {
     removeOn();
     addImg(imagem);
-    document.getElementById("resultado").innerText = "Biblioteca"
+    document.getElementById("resultado").innerText = "A Biblioteca é um local com múltiplos livros de diversos assuntos que podem ser emprestados para leitura, além de ser um ambiente agradável para os estudos, contendo mesas, cadeiras e computadores para auxiliar na aprendizagem. Além disso, nela também são disponibilizados armários para o estudante guardar os seus pertences que não serão úteis nos estudos, como casacos ou mochilas."
     rotaImg.style.cssText = "position: absolute; left: 59.2%; top: 71.6%; z-index: 99999;"
 
 
@@ -495,7 +496,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
   } else if (saida === "restaurante universitario" || chegada === "restaurante universitario") {
     removeOn();
     addImg(imagem);
-    document.getElementById("resultado").innerText = "Restaurante Universitario (RU)"
+    document.getElementById("resultado").innerText = "O Restaurante Universitário, popularmente conhecido como “bandeco” entre os alunos, é o local onde os frequentantes da Faculdade de Tecnologia (FT) e do COTIL tem acesso às suas refeições diárias. O RU possui uma programação que é disponibilizada semanalmente no site oficial da Secretaria de Administração Regional (SAR), contendo café da manhã, almoço e jantar, tendo um custo de R$2,00 para o café da manhã e de R$3,00 para almoço ou jantar."
     rotaImg.style.cssText = "position: absolute; left: 16%; top: 24.4%; z-index: 99999;"
 
 

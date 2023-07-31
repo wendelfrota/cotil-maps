@@ -4,6 +4,9 @@
     body{
         background-color: rgba(0, 0, 0, 0.37);
     }
+    header p{
+        font-size: 1.1em;
+    }
     #mapa form{
         max-width: 500px;
         margin: auto;
@@ -22,11 +25,20 @@
     #imagem-id{
         width: 70%;
     }
-    #mapa #cancel:active {/*testar o hover com active no cell*/
+    #mapa #cancel:active {
         background-color: var(--cor-w);
         color: white;
     }
     .card{
-        width: 350px;
+        width: 300px;
+    }
+}
+
+@media (max-width:360px){
+    .card{
+        width: 260px;
+    }
+    header p{
+        font-size: 1em;
     }
 }
