@@ -72,18 +72,16 @@ nav a {
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.288);
 }
 
-nav a:nth-child(n + 6) {
-    text-align: center;
-    float: right;
-    margin: 0px 10px 0px 0px;
-}
-
 nav a:hover {
     color: var(--cor0);
     background-color: var(--cor3);
     border-radius: 5px;
     padding: 5px 10px;
     text-shadow: none;
+}
+
+#btn-menu, #check{
+    display: none;
 }
 
 main {
@@ -161,11 +159,6 @@ main a:hover {
     background-color: white;
     border: 1px solid var(--cor-w);
     color: var(--cor-w);
-}
-
-#mapa #cancel:hover {
-    background-color: var(--cor-w);
-    color: white;
 }
 
 #resultado {

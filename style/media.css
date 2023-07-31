@@ -1,34 +1,68 @@
 @charset "UTF-8";
 
+@media (min-width:769px){
+    nav a:nth-child(n + 8) {
+        text-align: center;
+        float: right;
+        margin: 0px 10px 0px 0px;
+    }
+
+    #mapa #cancel:hover {
+        background-color: var(--cor-w);
+        color: white;
+    }
+}
+
 @media (max-width:769px){
     body{
         background-color: rgba(0, 0, 0, 0.37);
     }
+
     header p{
         font-size: 1.1em;
     }
+
+    nav a{
+        display: none;
+    }
+
+    #btn-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    #check:checked~a{
+        display: block;
+    }
+
     #mapa form{
         max-width: 500px;
         margin: auto;
     }
+
     #mapa select{
         width: 90%;
         margin-bottom: 5px;
     }
+
     #mapa input{
         width: 44.5%;
         position: relative;
     }
+
     #box-content{
         height: 350px;
     }
+
     #imagem-id{
         width: 70%;
     }
+
     #mapa #cancel:active {
         background-color: var(--cor-w);
         color: white;
     }
+
     .card{
         width: 300px;
     }
@@ -38,6 +72,7 @@
     .card{
         width: 260px;
     }
+
     header p{
         font-size: 1em;
     }
