@@ -318,7 +318,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     rotaImg.style.cssText = "position: absolute; left: 9.2%; top: 16.2%; z-index: 99999;"
 
 
-  } else if (saida === "quadras" && chegada === "biblioteca") {//
+  } else if (saida === "quadras" && chegada === "biblioteca") {
     removeOn();
     addImg(imagem);
     document.getElementById("rota-1").style.cssText = "width: 11.06%; top: 54.6%; left: 11.33%;"
@@ -345,7 +345,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     addImg(imagem);
     document.getElementById("rota-1").style.cssText = "width: 15.2%; top: 41.6%; left: 18%;"
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 31.8%; left: 18%; height: 10.6%; border-left: 4px dotted black;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("resultado").innerText = "Ao sair da cantina, siga em frente pelo caminho onde você irá encontrar o Restaurante Universitário e o Prédio Administrativo. Vire à direita e irá se deparar com a entrada do Restaurante Universitário."
     rotaImg.style.cssText = "position: absolute; left: 16%; top: 24.4%; z-index: 99999;"
 
 
@@ -353,8 +353,8 @@ document.getElementById("form").addEventListener("submit", function (event) {
     removeOn();
     addImg(imagem);
     document.getElementById("rota-1").style.cssText = "width: 15.2%; top: 41.6%; left: 18%;"
-    document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 31.8%; left: 18%; height: 10.6%; border-left: 4px dotted black;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("rota-2").style.cssText = "width: 3.26%; top: 39.3%; left: 15.13%; height: 3.2%; border-right: 4px dotted black; border-top: 4px dotted black; border-bottom: none;"
+    document.getElementById("resultado").innerText = "Após sair do Restaurante Universitário, siga reto pela esquerda e irá se deparar com a cantina."
     rotaImg.style.cssText = "position: absolute; left: 31.06%; top: 36.2%; z-index:99999;"
 
 
@@ -363,7 +363,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     addImg(imagem);
     document.getElementById("rota-1").style.cssText = "width: 15.2%; top: 41.6%; left: 18%;"
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 41.6%; left: 18%; height: 13.8%; border-left: 4px dotted black;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("resultado").innerText = "Ao sair da cantina, siga pelo caminho onde você irá encontrar o Restaurante Universitário e o Prédio Administrativo. Vire à esquerda e continue andando até a entrada do prédio."
     rotaImg.style.cssText = "position: absolute; left: 16%; top: 49.2%; z-index: 99999;"
 
 
@@ -372,7 +372,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     addImg(imagem);
     document.getElementById("rota-1").style.cssText = "width: 15.2%; top: 41.6%; left: 18%;"
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 41.6%; left: 18%; height: 13.8%; border-left: 4px dotted black;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("resultado").innerText = "Após sair do Prédio Administrativo, siga em direção ao Restaurante Universitário à esquerda, vire para a direita e siga em frente até se deparar com a cantina."
     rotaImg.style.cssText = "position: absolute; left: 31.06%; top: 36.2%; z-index:99999;"
 
 
@@ -382,7 +382,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     document.getElementById("rota-1").style.cssText = "width: 15.2%; top: 41.6%; left: 18%;"
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 41.6%; left: 18%; height: 13.8%; border-left: 4px dotted black;"
     document.getElementById("rota-3").style.cssText = "width: 11.06%; top: 54.6%; left: 7.46%;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("resultado").innerText = "Ao sair da cantina, siga reto pelo caminho onde você irá encontrar a entrada do Prédio Administrativo. Após isso, entre no mesmo e siga reto até encontrar a entrada principal do Prédio Acadêmico."
     rotaImg.style.cssText = "position: absolute; left: 4.93%; top: 49.2%; z-index: 99999;"
 
 
@@ -392,7 +392,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     document.getElementById("rota-1").style.cssText = "width: 15.2%; top: 41.6%; left: 18%;"
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 41.6%; left: 18%; height: 13.8%; border-left: 4px dotted black;"
     document.getElementById("rota-3").style.cssText = "width: 11.06%; top: 54.6%; left: 7.46%;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("resultado").innerText = "Após sair do prédio acadêmico, siga reto em direção ao Prédio Administrativo, saia pelo mesmo e continue seguindo em direção a praça até se deparar com a cantina."
     rotaImg.style.cssText = "position: absolute; left: 31.06%; top: 36.2%; z-index:99999;"
 
 
@@ -401,7 +401,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     addImg(imagem);
     document.getElementById("rota-1").style.cssText = "width: 20.66%; top: 41.4%; left: 11.33%;"
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 22%; left: 11.33%; height: 20.2%; border-left: 4px dotted black;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("resultado").innerText = "Ao sair da cantina, siga reto pelo caminho onde você irá encontrar o Restaurante Universitário e o Prédio Administrativo. Após o restaurante, vire para a direita e siga em frente até encontrar a entrada para a quadra, próxima das mesas de ping pong."
     rotaImg.style.cssText = "position: absolute; left: 9.2%; top: 16.2%; z-index: 99999;"
 
 
@@ -410,7 +410,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     addImg(imagem);
     document.getElementById("rota-1").style.cssText = "width: 20.66%; top: 41.4%; left: 11.33%;"
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 22%; left: 11.33%; height: 20.2%; border-left: 4px dotted black;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("resultado").innerText = "Ao sair da quadra descendo as escadas, siga reto e vire para a esquerda após o restaurante. Siga em frente até se deparar com a cantina."
     rotaImg.style.cssText = "position: absolute; left: 31.06%; top: 36%; z-index:99999;"
 
 
@@ -420,7 +420,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     document.getElementById("rota-1").style.cssText = "width: 24%; top: 77%; left: 37.86%; z-index: 1;"
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 45.2%; left: 37.86%; height: 32.6%; border-left: 4px dotted black;"
     document.getElementById("rota-3").style.cssText = "width: 3.2%; top: 45.2%; left: 35.2%;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("resultado").innerText = "Pegue as escadas mais próximas da cantina e siga para a direita em direção ao banco Santander. Vire para a esquerda e continue até chegar na entrada da biblioteca."
     rotaImg.style.cssText = "position: absolute; left: 59.2%; top: 71.6%; z-index: 99999;"
 
 
@@ -430,7 +430,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     document.getElementById("rota-1").style.cssText = "width: 24%; top: 77%; left: 37.86%; z-index: 1;"
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 45.2%; left: 37.86%; height: 32.6%; border-left: 4px dotted black;"
     document.getElementById("rota-3").style.cssText = "width: 3.2%; top: 45.2%; left: 35.2%;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("resultado").innerText = "Após sair da biblioteca, vire a direita e siga reto até se encontrar com as escadas. Vire novamente para a direita, onde se localiza o banco Santander e continue em frente até se deparar com outras escadas. Suba e você irá chegar ao seu destino."
     rotaImg.style.cssText = "position: absolute; left: 32.8%; top: 39.8%; z-index: 99999;"
 
 
@@ -441,7 +441,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 45.2%; left: 37.86%; height: 32.6%; border-left: 4px dotted black;"
     document.getElementById("rota-3").style.cssText = "width: 3.2%; top: 45.2%; left: 35.2%;"
     document.getElementById("rota-4").style.cssText = "width: 0.26%; top: 77%; left: 61.33%; height: 18.8%; border-left: 4px dotted black;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("resultado").innerText = "Pegue as escadas mais próximas da cantina e siga para a direita em direção ao banco Santander. Vire para a esquerda e continue até chegar na entrada da biblioteca. Por fim, vire para a direita e continue andando até se deparar com o portão de saída."
     rotaImg.style.cssText = "position: absolute; left: 59.2%; top: 90.4%; z-index: 99999;"
 
 
@@ -452,7 +452,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     document.getElementById("rota-2").style.cssText = "width: 0.26%; top: 45.2%; left: 37.86%; height: 32.6%; border-left: 4px dotted black;"
     document.getElementById("rota-3").style.cssText = "width: 3.2%; top: 45.2%; left: 35.2%;"
     document.getElementById("rota-4").style.cssText = "width: 0.26%; top: 77%; left: 61.33%; height: 18.8%; border-left: 4px dotted black;"
-    document.getElementById("resultado").innerText = "."
+    document.getElementById("resultado").innerText = "Após entrar no campus, siga reto até se deparar com a biblioteca, vire para a esquerda e siga em frente até se encontrar com as escadas. Siga para a direita, onde se localiza o banco Santander. Continue em frente até se deparar com outras escadas. Suba e você irá chegar ao seu destino."
     rotaImg.style.cssText = "position: absolute; left: 32.8%; top: 39.8%; z-index: 99999;"
 
 
@@ -487,7 +487,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
   } else if (saida === "quadras" || chegada === "quadras") {
     removeOn();
     addImg(imagem);
-    document.getElementById("resultado").innerText = "Quadras Poliesportivas"
+    document.getElementById("resultado").innerText = "As quadras são um espaço destinado aos alunos para a prática de esportes e atividades físicas, usadas tanto nos intervalos e aulas livres, quanto nas aulas de Educação Física. Além das duas quadras poliesportivas em si, também existem mesas para a prática de tênis de mesa, um campo de futebol e duas quadras de vôlei de areia, sendo que a última só se encontra disponível nas aulas."
     rotaImg.style.cssText = "position: absolute; left: 9.2%; top: 16.2%; z-index: 99999;"
 
 
