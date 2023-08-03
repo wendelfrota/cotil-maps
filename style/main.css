@@ -199,25 +199,6 @@ main a:hover {
     box-shadow: 2px 2px 3px rgba(58, 58, 58, 0.116);
 }
 
-.prd-g:hover {
-    background: gray;
-}
-
-.prd-b:hover {
-    background: darkblue;
-    box-shadow: 2px 2px 2px rgb(5, 5, 165);
-}
-
-.prd-o:hover {
-    background: orange;
-    box-shadow: 2px 2px 2px #ffa500;
-}
-
-.prd-y:hover {
-    background: yellow;
-    box-shadow: 2px 2px 2px rgb(252, 252, 10);
-}
-
 #rota-1,
 #rota-2,
 #rota-3,
@@ -253,6 +234,13 @@ main a:hover {
     margin-bottom: 50px;
 }
 /*cursos*/
+
+#cursos a{
+    margin-top: 6px;
+    display: inline-block;
+    font-size: 1.4em;
+}
+
 #contato {
     text-align: center;
 }

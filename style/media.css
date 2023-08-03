@@ -11,6 +11,25 @@
         background-color: var(--cor-w);
         color: white;
     }
+    
+    .prd-g:hover {
+        background: gray;
+    }
+
+    .prd-b:hover {
+        background: darkblue;
+        box-shadow: 2px 2px 2px rgb(5, 5, 165);
+    }
+
+    .prd-o:hover {
+        background: orange;
+        box-shadow: 2px 2px 2px #ffa500;
+    }
+
+    .prd-y:hover {
+        background: yellow;
+        box-shadow: 2px 2px 2px rgb(252, 252, 10);
+    }
 }
 
 @media (max-width:769px){
