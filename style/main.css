@@ -35,6 +35,12 @@ header {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
 }
 
+.banner{
+    padding: 0;
+    height: 270px;
+    margin-top: -71px;
+}
+
 header h1 {
     color: white;
     font-family: var(--font-em);
@@ -82,6 +88,7 @@ nav a:hover {
 }
 
 main {
+    padding-top: 20px;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 0 0 10px 10px;
@@ -119,8 +126,7 @@ main a:hover {
 /* mapa */
 
 #mapa {
-    padding-top: 20px;
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
 #mapa form {
@@ -235,10 +241,63 @@ main a:hover {
 }
 /*cursos*/
 
-#cursos a{
-    margin-top: 6px;
-    display: inline-block;
-    font-size: 1.4em;
+#cursos p{
+    font-family: var(--font-main);
+    font-size: 1.3em;
+    max-width: 550px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#pol-logo1 {
+    clip-path: circle();
+    background: #f7f7f7;
+    max-width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pol-logo2 {
+    width: 100px;
+    height: 100px;
+    clip-path: circle();
+    position: absolute;
+    background: #ff0000;
+    z-index: 2;
+}
+
+#pol-logo3 {
+    width: 250px;
+    height: 250px;
+    clip-path: circle();
+    position: absolute;
+}
+
+#pol-hidden {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    clip-path: circle();
+    background: #f7f7f7;
+    z-index: 1;
+}
+
+.pol{
+    width: 100px;
+    height: 55px;
+    position: absolute;
+    background-color: black;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+}
+
+.pol:hover {
+    scale:1.1;
 }
 
 #contato {

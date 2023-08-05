@@ -41,6 +41,10 @@
         font-size: 1.1em;
     }
 
+    .banner{
+        margin-top: -90px;
+    }
+
     nav a{
         display: none;
     }
