@@ -241,12 +241,28 @@ main a:hover {
 }
 /*cursos*/
 
-#cursos p{
+#cursos > p{
     font-family: var(--font-main);
     font-size: 1.3em;
-    max-width: 550px;
+    background: linear-gradient(to right, #f7f7f7, transparent);
+    padding: 5px;
+    text-indent: 1em;
+    text-align: center;
+    max-width: 560px;
     margin: auto;
     margin-top: 50px;
+}
+
+.nome-cursos{
+    position: absolute;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    z-index: 1;
+}
+
+.nome-cursos p{
+    font-family: var(--font-main);
+    font-size: 1.2em;
 }
 
 #pol-logo1 {
