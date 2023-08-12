@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width:769px){
+@media (min-width:1024px){
     nav a:nth-child(n + 8) {
         text-align: center;
         float: right;
@@ -13,7 +13,7 @@
     }
 
     #box-content{
-        width: 75%;
+        width: 80%;
     }
     
     .prd-g:hover {
@@ -36,7 +36,7 @@
     }
 }
 
-@media (max-width:769px){
+@media (max-width: 1023px){
     body{
         background-color: rgba(0, 0, 0, 0.37);
     }
