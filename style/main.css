@@ -53,6 +53,9 @@ header p {
     max-width: 520px;
     margin: auto;
     margin-top: 10px;
+    text-align: center;
+    text-indent: 0;
+    line-height: 1.15em;
     font-family: var(--font-main);
     font-size: 1.2em;
 }
@@ -106,6 +109,28 @@ main h1 {
     font-size: 3em;
     color: var(--cor2);
     margin-top: 25px;
+}
+
+main h2 {
+    text-indent: 1.2em;
+    color: var(--cor4);
+    margin-top: 25px;
+    padding: 5px;
+    font-family: var(--font-main);
+    background-image: linear-gradient(to right, var(--cor-w), transparent);
+}
+
+main p {
+    line-height: 1.4em;
+    color: black;
+    margin: auto;
+    max-width: 700px;
+    text-indent: 1em;
+    text-align: justify;
+    font-family: var(--font-main);
+    font-size: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 main section {
@@ -215,29 +240,6 @@ main a:hover {
 }
 
 /* fim do mapa */
-
-#sobre h2 {
-    text-indent: 1.2em;
-    color: var(--cor4);
-    margin-top: 25px;
-    padding: 5px;
-    font-family: var(--font-main);
-    background-image: linear-gradient(to right, var(--cor-w), transparent);
-}
-
-#sobre p {
-    line-height: 1.4em;
-    color: black;
-    margin: auto;
-    max-width: 700px;
-    text-indent: 1em;
-    text-align: justify;
-    font-family: var(--font-main);
-    font-size: 1.3em;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-/*cursos*/
 
 #cursos > p{
     font-family: var(--font-main);
@@ -381,9 +383,11 @@ dialog img{
     font-size: 1.1em;
     position: relative;
     text-align: center;
+    text-indent: 0;
 }
 
 .card p:nth-child(3) {
+    text-indent: 0;
     text-align: left;
 }
 
