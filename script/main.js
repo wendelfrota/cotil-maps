@@ -1,15 +1,9 @@
-/*function ativarDiv(divId) {  
-    var divs = document.querySelectorAll('.ativa');
-    for (var i = 0; i < divs.length; i++) {
-      if (divs[i].id !== divId) {
-        divs[i].classList.remove("ativa");
-      }
-    }
-    
-    var div = document.getElementById(divId);
-    div.classList.toggle("ativa");
-  }*/
-
+document.querySelector("#btnModal").onclick = function() {
+  document.querySelector("dialog").showModal();
+}
+document.querySelector("#closeModal").onclick = function() {
+  document.querySelector("dialog").close();
+}
 
 document.getElementById("form").addEventListener("reset", function () {
   document.getElementById("rota-1").style.cssText = ""

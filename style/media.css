@@ -11,6 +11,10 @@
         background-color: var(--cor-w);
         color: white;
     }
+
+    #box-content{
+        width: 75%;
+    }
     
     .prd-g:hover {
         background: gray;
@@ -79,10 +83,6 @@
         position: relative;
     }
 
-    #box-content{
-        height: 350px;
-    }
-
     #imagem-id{
         width: 70%;
     }
@@ -104,5 +104,11 @@
 
     header p{
         font-size: 1em;
+    }
+}
+
+@media (min-width:850px){
+    dialog img{
+        width: 75%;
     }
 }

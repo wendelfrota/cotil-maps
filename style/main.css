@@ -183,8 +183,6 @@ main a:hover {
     margin: auto;
     margin-bottom: 50px;
     margin-top: 75px;
-    height: 500px;
-    width: 75%;
     clip-path: polygon(54.2% 0, 100% 61.4%, 100% 100%, 0 100%, 0 0);
     background: #c0c0c0;
     border-radius: 8px;
@@ -244,25 +242,67 @@ main a:hover {
 #cursos > p{
     font-family: var(--font-main);
     font-size: 1.3em;
-    background: linear-gradient(to right, #f7f7f7, transparent);
     padding: 5px;
     text-indent: 1em;
     text-align: center;
     max-width: 560px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
-.nome-cursos{
-    position: absolute;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    z-index: 1;
-}
-
-.nome-cursos p{
+#btnModal{
+    color: white;
     font-family: var(--font-main);
-    font-size: 1.2em;
+    font-size: 0.7em;
+    padding: 8px;
+    background-color: var(--cor3);
+    border: none;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.192);
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+#btnModal:hover{
+    background-color: var(--cor2);
+}
+
+dialog{
+    border: none;
+    border-radius: 8px;
+    width: 1000px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#closeModal{
+    margin: 2px 2px 0 0;
+    font-size: 2.2em;
+    height: 1.3em;
+    width: 1.3em;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    color: var(--cor4);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#closeModal:hover{
+    background-color: var(--cor4);
+    color: white;
+}
+
+dialog img{
+    width: 100%;
+    display: block;
+    margin: auto;
 }
 
 #pol-logo1 {
@@ -273,7 +313,7 @@ main a:hover {
     overflow: hidden;
     position: relative;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
