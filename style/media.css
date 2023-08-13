@@ -87,10 +87,6 @@
         background-color: var(--cor-w);
         color: white;
     }
-
-    .card{
-        width: 300px;
-    }
 }
 
 @media (max-width:360px){

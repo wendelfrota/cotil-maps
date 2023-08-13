@@ -22,6 +22,11 @@
     font-family: var(--font-main);
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
 body {
     background-color: rgba(255, 0, 0, 0.37);
     background-attachment: fixed;
@@ -374,6 +379,7 @@ dialog img{
 
 .card img {
     display: block;
+    margin: auto;
     width: 100%;
 }
 
