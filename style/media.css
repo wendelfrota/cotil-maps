@@ -17,7 +17,7 @@
     }
     
     .prd-g:hover {
-        background: gray;
+        background: #808080;
     }
 
     .prd-b:hover {
@@ -37,6 +37,10 @@
 }
 
 @media (max-width: 1023px){
+    body{  
+        background: linear-gradient(to bottom, var(--cor4), rgba(255, 0, 0, 0.37));
+    }
+
     header p{
         font-size: 1.1em;
     }
@@ -104,5 +108,6 @@
 @media (min-width:850px){
     dialog img{
         width: 75%;
+        margin: auto;
     }
 }

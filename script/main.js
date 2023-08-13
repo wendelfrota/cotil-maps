@@ -1,8 +1,15 @@
-document.querySelector("#btnModal").onclick = function() {
-  document.querySelector("dialog").showModal();
+document.querySelector("#btn-mapa-modal").onclick = function() {
+  document.querySelector("#mapa dialog").showModal();
 }
-document.querySelector("#closeModal").onclick = function() {
-  document.querySelector("dialog").close();
+document.querySelector("#mapa .closeModal").onclick = function() {
+  document.querySelector("#mapa dialog").close();
+}
+
+document.querySelector("#btn-cursos-modal").onclick = function() {
+  document.querySelector("#cursos dialog").showModal();
+}
+document.querySelector("#cursos .closeModal").onclick = function() {
+  document.querySelector("#cursos dialog").close();
 }
 
 document.getElementById("form").addEventListener("reset", function () {

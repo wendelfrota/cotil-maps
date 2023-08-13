@@ -225,11 +225,6 @@ main a:hover {
     background: #ddd;
     position: absolute;
     transition: all 0.3s ease;
-}
-
-.prd-b,
-.prd-o,
-.prd-y {
     box-shadow: 2px 2px 3px rgba(58, 58, 58, 0.116);
 }
 
@@ -257,7 +252,7 @@ main a:hover {
     margin-top: 25px;
 }
 
-#btnModal{
+.btnModal{
     color: white;
     font-family: var(--font-main);
     font-size: 0.7em;
@@ -271,7 +266,7 @@ main a:hover {
     margin: 20px auto;
 }
 
-#btnModal:hover{
+.btnModal:hover{
     background-color: var(--cor2);
 }
 
@@ -287,7 +282,7 @@ dialog::backdrop{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#closeModal{
+.closeModal{
     margin: 2px 2px 0 0;
     font-size: 2.2em;
     height: 1.3em;
@@ -301,7 +296,7 @@ dialog::backdrop{
     cursor: pointer;
 }
 
-#closeModal:hover{
+.closeModal:hover{
     background-color: var(--cor4);
     color: white;
 }
