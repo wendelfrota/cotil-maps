@@ -407,6 +407,12 @@ dialog img{
     text-decoration: none;
 }
 
+#cotil-maps-form{
+    width: 100%; 
+    height: 1832px;
+    margin-top: 25px;
+}
+
 footer p {
     font-family: var(--font-main);
     text-align: center;
