@@ -79,10 +79,6 @@
         position: relative;
     }
 
-    #imagem-id{
-        width: 70%;
-    }
-
     #mapa #cancel:active {
         background-color: var(--cor-w);
         color: white;
@@ -96,6 +92,12 @@
 
     header p{
         font-size: 1em;
+    }
+}
+
+@media (max-width:767px){
+    #imagem-id{
+        width: 70%;
     }
 }
 
