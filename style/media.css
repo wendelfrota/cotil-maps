@@ -7,6 +7,14 @@
         margin: 0px 10px 0px 0px;
     }
 
+    nav a:hover {
+        color: var(--cor0);
+        background-color: var(--cor3);
+        border-radius: 5px;
+        padding: 5px 10px;
+        text-shadow: none;
+    }
+
     #mapa #cancel:hover {
         background-color: var(--cor-w);
         color: white;
@@ -38,7 +46,7 @@
 
 @media (max-width: 1023px){
     body{  
-        background-color: var(--cor4);
+        background-color: transparent;
     }
 
     header p{
@@ -51,6 +59,11 @@
 
     nav a{
         display: none;
+    }
+
+    nav a:active {
+        color: var(--cor0);
+        text-shadow: none;
     }
 
     #btn-menu{
