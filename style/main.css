@@ -187,15 +187,16 @@ main a:hover {
 }
 
 #resultado {
-    color: var(--cor4);
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.349);
+    color: black;
     padding: 8px;
+    border: 1px solid var(--cor4);
+    border-radius: 4px;
     font-family: var(--font-main);
     font-size: 1.2em;
+    max-width: 720px;
     margin: auto;
-    margin: 20px 20px 0 20px;
+    margin-top: 20px;
     text-align: center;
-    background-image: linear-gradient(to right, var(--cor-w), transparent);
 }
 
 /*(código criado no inicio do aprendizado)*/
@@ -204,7 +205,7 @@ main a:hover {
     position: relative;
     margin: auto;
     margin-bottom: 50px;
-    margin-top: 75px;
+    margin-top: 50px;
     clip-path: polygon(54.2% 0, 100% 61.4%, 100% 100%, 0 100%, 0 0);
     background: #c0c0c0;
     border-radius: 8px;
