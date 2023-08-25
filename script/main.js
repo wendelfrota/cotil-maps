@@ -460,14 +460,14 @@ document.getElementById("form").addEventListener("submit", function (event) {
   } else if (saida === "academico" || chegada === "academico") {
     removeOn();
     addImg(imagem);
-    document.getElementById("resultado").innerText = "Prédio Acadêmico"
+    document.getElementById("resultado").innerText = "No prédio acadêmico é onde ocorrem as aulas da grade do ensino médio e algumas aulas do técnico. O local conta com 18 salas de aula, ambiente para refeições, laboratório de ciências e laboratórios de ensino técnico."
     rotaImg.style.cssText = "position: absolute; left: 4.93%; top: 49.2%; z-index: 99999;"
 
 
   } else if (saida === "administrativo" || chegada === "administrativo") {
     removeOn();
     addImg(imagem);
-    document.getElementById("resultado").innerText = "Prédio Administrativo"
+    document.getElementById("resultado").innerText = "O prédio administrativo é onde se localiza os responsáveis pelo regimento do colégio, lá, se encontra a secretaria, o sociopedagógico, a APM, o TIC, entre outras entidades."
     rotaImg.style.cssText = "position: absolute; left: 16%; top: 49.2%; z-index: 99999;"
 
 
@@ -502,7 +502,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
   } else if (saida === "cantina" || chegada === "cantina") {
     removeOn();
     addImg(imagem);
-    document.getElementById("resultado").innerText = "Cantina"
+    document.getElementById("resultado").innerText = "A cantina é o local onde os alunos podem comprar alimentos durante o dia e consumi-los. Conta com bancos e mesinhas para maior conforto dos alunos e para que eles possam socializar."
     rotaImg.style.cssText = "position: absolute; left: 32.8%; top: 39.8%; z-index: 99999;"
   }
 }); 
